@@ -1,6 +1,6 @@
 # CryptoExchangeIOS
 
-Projeto iOS em SwiftUI criado a partir do app Android Compose enviado.
+Projeto iOS em SwiftUI
 
 Stack:
 - SwiftUI
