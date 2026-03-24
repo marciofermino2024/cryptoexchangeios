@@ -171,3 +171,4 @@ struct ExchangeDetailScreen: View {
         }
     }
 }
+
