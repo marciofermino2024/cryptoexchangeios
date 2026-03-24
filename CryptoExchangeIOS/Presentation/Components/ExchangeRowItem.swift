@@ -40,8 +40,6 @@ struct ExchangeRowItem: View {
 
             Spacer(minLength: 8)
 
-            Image(systemName: "chevron.right")
-                .foregroundStyle(.tertiary)
         }
         .padding(.vertical, 8)
         .contentShape(Rectangle())
