@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000046 /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000024 /* AppRootView.swift */; };
+		000000000000000000000047 /* CryptoExchangeIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000025 /* CryptoExchangeIOSApp.swift */; };
+		000000000000000000000048 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000026 /* AppConfiguration.swift */; };
+		000000000000000000000049 /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000027 /* AppContainer.swift */; };
+		00000000000000000000004A /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000028 /* Date+Formatting.swift */; };
+		00000000000000000000004B /* Double+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000029 /* Double+Formatting.swift */; };
+		00000000000000000000004C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002A /* APIClient.swift */; };
+		00000000000000000000004D /* CMCLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002B /* CMCLogger.swift */; };
+		00000000000000000000004E /* ExchangeDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002C /* ExchangeDTOs.swift */; };
+		00000000000000000000004F /* ExchangeMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002D /* ExchangeMapper.swift */; };
+		000000000000000000000050 /* ExchangeRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002E /* ExchangeRepositoryImpl.swift */; };
+		000000000000000000000051 /* ExchangeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000002F /* ExchangeService.swift */; };
+		000000000000000000000052 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000030 /* AppError.swift */; };
+		000000000000000000000053 /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000031 /* Exchange.swift */; };
+		000000000000000000000054 /* ExchangeMarketPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000032 /* ExchangeMarketPair.swift */; };
+		000000000000000000000055 /* ExchangeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000033 /* ExchangeRepository.swift */; };
+		000000000000000000000056 /* GetExchangeDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000034 /* GetExchangeDetailUseCase.swift */; };
+		000000000000000000000057 /* GetExchangeListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000035 /* GetExchangeListUseCase.swift */; };
+		000000000000000000000058 /* GetExchangeMarketPairsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000036 /* GetExchangeMarketPairsUseCase.swift */; };
+		000000000000000000000059 /* DebugErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000037 /* DebugErrorView.swift */; };
+		00000000000000000000005A /* DebugImageLogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000038 /* DebugImageLogsView.swift */; };
+		00000000000000000000005B /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000039 /* EmptyStateView.swift */; };
+		00000000000000000000005C /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003A /* ErrorView.swift */; };
+		00000000000000000000005D /* ExchangeLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003B /* ExchangeLogoView.swift */; };
+		00000000000000000000005E /* ExchangeRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003C /* ExchangeRowItem.swift */; };
+		00000000000000000000005F /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003D /* LoadingView.swift */; };
+		000000000000000000000060 /* MarketPairRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003E /* MarketPairRowItem.swift */; };
+		000000000000000000000061 /* UIState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000003F /* UIState.swift */; };
+		000000000000000000000062 /* ExchangeDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000040 /* ExchangeDetailScreen.swift */; };
+		000000000000000000000063 /* ExchangeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000041 /* ExchangeDetailViewModel.swift */; };
+		000000000000000000000064 /* ExchangeListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000042 /* ExchangeListScreen.swift */; };
+		000000000000000000000065 /* ExchangeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000043 /* ExchangeListViewModel.swift */; };
+		000000000000000000000066 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000044 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00000000000000000000001A /* CryptoExchangeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoExchangeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000024 /* AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRootView.swift; sourceTree = "<group>"; };
+		000000000000000000000025 /* CryptoExchangeIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExchangeIOSApp.swift; sourceTree = "<group>"; };
+		000000000000000000000026 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		000000000000000000000027 /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		000000000000000000000028 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		000000000000000000000029 /* Double+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Formatting.swift"; sourceTree = "<group>"; };
+		00000000000000000000002A /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		00000000000000000000002B /* CMCLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMCLogger.swift; sourceTree = "<group>"; };
+		00000000000000000000002C /* ExchangeDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDTOs.swift; sourceTree = "<group>"; };
+		00000000000000000000002D /* ExchangeMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeMapper.swift; sourceTree = "<group>"; };
+		00000000000000000000002E /* ExchangeRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRepositoryImpl.swift; sourceTree = "<group>"; };
+		00000000000000000000002F /* ExchangeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeService.swift; sourceTree = "<group>"; };
+		000000000000000000000030 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		000000000000000000000031 /* Exchange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		000000000000000000000032 /* ExchangeMarketPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeMarketPair.swift; sourceTree = "<group>"; };
+		000000000000000000000033 /* ExchangeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRepository.swift; sourceTree = "<group>"; };
+		000000000000000000000034 /* GetExchangeDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeDetailUseCase.swift; sourceTree = "<group>"; };
+		000000000000000000000035 /* GetExchangeListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeListUseCase.swift; sourceTree = "<group>"; };
+		000000000000000000000036 /* GetExchangeMarketPairsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetExchangeMarketPairsUseCase.swift; sourceTree = "<group>"; };
+		000000000000000000000037 /* DebugErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugErrorView.swift; sourceTree = "<group>"; };
+		000000000000000000000038 /* DebugImageLogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugImageLogsView.swift; sourceTree = "<group>"; };
+		000000000000000000000039 /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		00000000000000000000003A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		00000000000000000000003B /* ExchangeLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeLogoView.swift; sourceTree = "<group>"; };
+		00000000000000000000003C /* ExchangeRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRowItem.swift; sourceTree = "<group>"; };
+		00000000000000000000003D /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		00000000000000000000003E /* MarketPairRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketPairRowItem.swift; sourceTree = "<group>"; };
+		00000000000000000000003F /* UIState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIState.swift; sourceTree = "<group>"; };
+		000000000000000000000040 /* ExchangeDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailScreen.swift; sourceTree = "<group>"; };
+		000000000000000000000041 /* ExchangeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000042 /* ExchangeListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListScreen.swift; sourceTree = "<group>"; };
+		000000000000000000000043 /* ExchangeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewModel.swift; sourceTree = "<group>"; };
+		000000000000000000000044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		000000000000000000000045 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00000000000000000000001C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 /* CryptoExchangeIOS */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* App */,
+				000000000000000000000006 /* Core */,
+				000000000000000000000007 /* Data */,
+				000000000000000000000008 /* Domain */,
+				000000000000000000000009 /* Presentation */,
+				00000000000000000000000A /* Resources */,
+			);
+			path = CryptoExchangeIOS;
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000001A /* CryptoExchangeIOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		000000000000000000000005 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000024 /* AppRootView.swift */,
+				000000000000000000000025 /* CryptoExchangeIOSApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000006 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000B /* Configuration */,
+				00000000000000000000000C /* DI */,
+				00000000000000000000000D /* Extensions */,
+				00000000000000000000000E /* Networking */,
+				00000000000000000000000F /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		000000000000000000000007 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000010 /* DTOs */,
+				000000000000000000000011 /* Mappers */,
+				000000000000000000000012 /* Repositories */,
+				000000000000000000000013 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		000000000000000000000008 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000014 /* Models */,
+				000000000000000000000015 /* Repositories */,
+				000000000000000000000016 /* UseCases */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		000000000000000000000009 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000017 /* Components */,
+				000000000000000000000018 /* ExchangeDetail */,
+				000000000000000000000019 /* ExchangeList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000044 /* Assets.xcassets */,
+				000000000000000000000045 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000B /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000026 /* AppConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000C /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000027 /* AppContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000028 /* Date+Formatting.swift */,
+				000000000000000000000029 /* Double+Formatting.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002A /* APIClient.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		00000000000000000000000F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002B /* CMCLogger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		000000000000000000000010 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002C /* ExchangeDTOs.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		000000000000000000000011 /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002D /* ExchangeMapper.swift */,
+			);
+			path = Mappers;
+			sourceTree = "<group>";
+		};
+		000000000000000000000012 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002E /* ExchangeRepositoryImpl.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		000000000000000000000013 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000002F /* ExchangeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		000000000000000000000014 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000030 /* AppError.swift */,
+				000000000000000000000031 /* Exchange.swift */,
+				000000000000000000000032 /* ExchangeMarketPair.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000015 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000033 /* ExchangeRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		000000000000000000000016 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000034 /* GetExchangeDetailUseCase.swift */,
+				000000000000000000000035 /* GetExchangeListUseCase.swift */,
+				000000000000000000000036 /* GetExchangeMarketPairsUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		000000000000000000000017 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000037 /* DebugErrorView.swift */,
+				000000000000000000000038 /* DebugImageLogsView.swift */,
+				000000000000000000000039 /* EmptyStateView.swift */,
+				00000000000000000000003A /* ErrorView.swift */,
+				00000000000000000000003B /* ExchangeLogoView.swift */,
+				00000000000000000000003C /* ExchangeRowItem.swift */,
+				00000000000000000000003D /* LoadingView.swift */,
+				00000000000000000000003E /* MarketPairRowItem.swift */,
+				00000000000000000000003F /* UIState.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		000000000000000000000018 /* ExchangeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000040 /* ExchangeDetailScreen.swift */,
+				000000000000000000000041 /* ExchangeDetailViewModel.swift */,
+			);
+			path = ExchangeDetail;
+			sourceTree = "<group>";
+		};
+		000000000000000000000019 /* ExchangeList */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000042 /* ExchangeListScreen.swift */,
+				000000000000000000000043 /* ExchangeListViewModel.swift */,
+			);
+			path = ExchangeList;
+			sourceTree = "<group>";
+		};
+		000000000000000000000067 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000002 /* CryptoExchangeIOS */,
+				000000000000000000000003 /* Products */,
+				000000000000000000000004 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000001 /* CryptoExchangeIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000001F /* Build configuration list for PBXNativeTarget "CryptoExchangeIOS" */;
+			buildPhases = (
+				00000000000000000000001B /* Sources */,
+				00000000000000000000001C /* Frameworks */,
+				00000000000000000000001D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoExchangeIOS;
+			productName = CryptoExchangeIOS;
+			productReference = 00000000000000000000001A /* CryptoExchangeIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A00000000000000000000001 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 00000000000000000000001E /* Build configuration list for PBXProject "CryptoExchangeIOS" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000067;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000001 /* CryptoExchangeIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00000000000000000000001D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000066 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00000000000000000000001B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000046 /* AppRootView.swift in Sources */,
+				000000000000000000000047 /* CryptoExchangeIOSApp.swift in Sources */,
+				000000000000000000000048 /* AppConfiguration.swift in Sources */,
+				000000000000000000000049 /* AppContainer.swift in Sources */,
+				00000000000000000000004A /* Date+Formatting.swift in Sources */,
+				00000000000000000000004B /* Double+Formatting.swift in Sources */,
+				00000000000000000000004C /* APIClient.swift in Sources */,
+				00000000000000000000004D /* CMCLogger.swift in Sources */,
+				00000000000000000000004E /* ExchangeDTOs.swift in Sources */,
+				00000000000000000000004F /* ExchangeMapper.swift in Sources */,
+				000000000000000000000050 /* ExchangeRepositoryImpl.swift in Sources */,
+				000000000000000000000051 /* ExchangeService.swift in Sources */,
+				000000000000000000000052 /* AppError.swift in Sources */,
+				000000000000000000000053 /* Exchange.swift in Sources */,
+				000000000000000000000054 /* ExchangeMarketPair.swift in Sources */,
+				000000000000000000000055 /* ExchangeRepository.swift in Sources */,
+				000000000000000000000056 /* GetExchangeDetailUseCase.swift in Sources */,
+				000000000000000000000057 /* GetExchangeListUseCase.swift in Sources */,
+				000000000000000000000058 /* GetExchangeMarketPairsUseCase.swift in Sources */,
+				000000000000000000000059 /* DebugErrorView.swift in Sources */,
+				00000000000000000000005A /* DebugImageLogsView.swift in Sources */,
+				00000000000000000000005B /* EmptyStateView.swift in Sources */,
+				00000000000000000000005C /* ErrorView.swift in Sources */,
+				00000000000000000000005D /* ExchangeLogoView.swift in Sources */,
+				00000000000000000000005E /* ExchangeRowItem.swift in Sources */,
+				00000000000000000000005F /* LoadingView.swift in Sources */,
+				000000000000000000000060 /* MarketPairRowItem.swift in Sources */,
+				000000000000000000000061 /* UIState.swift in Sources */,
+				000000000000000000000062 /* ExchangeDetailScreen.swift in Sources */,
+				000000000000000000000063 /* ExchangeDetailViewModel.swift in Sources */,
+				000000000000000000000064 /* ExchangeListScreen.swift in Sources */,
+				000000000000000000000065 /* ExchangeListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		000000000000000000000020 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		000000000000000000000021 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		000000000000000000000022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CryptoExchangeIOS/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cryptoexchange.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		000000000000000000000023 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CryptoExchangeIOS/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.cryptoexchange.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000001E /* Build configuration list for PBXProject "CryptoExchangeIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000020 /* Debug */,
+				000000000000000000000021 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000001F /* Build configuration list for PBXNativeTarget "CryptoExchangeIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000022 /* Debug */,
+				000000000000000000000023 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}
