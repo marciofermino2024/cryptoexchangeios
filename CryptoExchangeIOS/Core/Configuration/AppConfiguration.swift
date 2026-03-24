@@ -9,6 +9,6 @@
 import Foundation
 enum AppConfiguration {
 
-        static let apiKey = "f21e3529759e4ba39f1eaa1fbc814d9e"
+        static let apiKey = "9a6a8a2e5e6e468ba24a7d5ea5af2efe"
         static let baseURL = URL(string: "https://pro-api.coinmarketcap.com")!
     }
